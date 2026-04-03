@@ -1,26 +1,26 @@
 class Mhost < Formula
   desc "AI-powered process manager written in Rust"
   homepage "https://github.com/maqalaqil/mhost"
-  version "0.9.1"
+  version "0.9.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/maqalaqil/mhost/releases/download/v0.9.1/mhost-aarch64-apple-darwin.tar.gz"
-      sha256 "022ff4d722d1a62007b750da7571b9b6e28fcda480996c93f38036876f7cef5e"
+      url "https://github.com/maqalaqil/mhost/releases/download/v0.9.2/mhost-aarch64-apple-darwin.tar.gz"
+      sha256 "64e354b275afb84e10b54639235ea01e66d119e4a4301726e776644390fe32df"
     else
-      url "https://github.com/maqalaqil/mhost/releases/download/v0.9.1/mhost-x86_64-apple-darwin.tar.gz"
-      sha256 "13c8e36176650d30eff986af3471a557d38c6bd1f1587593c2e11be4b4b6112b"
+      url "https://github.com/maqalaqil/mhost/releases/download/v0.9.2/mhost-x86_64-apple-darwin.tar.gz"
+      sha256 "567670e878255c9691b4e0f3a4571a6c89004382a59d5baa5e445cae7e72ad9e"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/maqalaqil/mhost/releases/download/v0.9.1/mhost-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "4dfc4a34f381184c28b766ebd024b14e06b437452347f9e1162a8e7527fd0613"
+      url "https://github.com/maqalaqil/mhost/releases/download/v0.9.2/mhost-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "704c16294d9c58a79fb07c15e566408e66b90f61598da76002dc02f984004531"
     else
-      url "https://github.com/maqalaqil/mhost/releases/download/v0.9.1/mhost-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "1aff18b5923b8ed5aa0483055b1146fda570ca003531fc8b26ae63b2454c0606"
+      url "https://github.com/maqalaqil/mhost/releases/download/v0.9.2/mhost-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "de068bc2a2cfb081b715ae25738096333b21c7cdf679293a3be48e10e16db93e"
     end
   end
 
